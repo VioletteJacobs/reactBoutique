@@ -1,0 +1,80 @@
+.Nav {
+    background-color: #A63D10;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+.menu{
+    background-color: #A63D10;
+    font-size: 2rem;
+    background: none;
+}
+.nav-menu{
+    background-color: #A63D10;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fix;
+    left: -100%;
+    transition: 950ms;
+}
+.nav-menu.active{
+    left: 0;
+    transition: 400ms;
+}
+.nav-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 9px 0 9px 18px;
+    list-style: none;
+    height: 80px;
+}
+.nav-text a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    border-radius : 8px
+    
+
+}
+.nav-menu-items{
+    width: 100%
+}
+.navbar-toggle{
+     background-color: #A63D10;
+     width: 100%;
+     height: 80px;
+     display: flex;
+     justify-content: start;
+     align-items: center;
+}
+span{
+    margin-left: 18px;
+}
+.banniere{
+    background-image: url("./img/clothes.jpeg");
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+   
+}
+/* h1{
+    font-size: 80px;
+} */
+.banniereSpan{
+    color: #A63D10;
+    font-size: 60px;
+}
