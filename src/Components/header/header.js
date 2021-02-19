@@ -17,6 +17,7 @@ export default function Header() {
     const [sidebar, setSidebar] = useState(false);
     // permet de changer de state.
     const showSidebar = () => setSidebar(!sidebar);
+
     return (
         <Fragment>
             <IconContext.Provider value = {{ color : "#fff"}}>
@@ -24,14 +25,14 @@ export default function Header() {
             <Router>
                 {/* nav */}
                 <div className="Nav">
-                    <Link to="/" className="menu">
+                    <Link to="#" className="menu">
                         <FaIcons.FaBars onClick={showSidebar} />
                     </Link>
                 </div>
                 <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-                    <ul className="nav-menu-items">
+                    <ul className="nav-menu-items" onClick={showSidebar}>
                         <li className="navbar-toggle">
-                            <Link>
+                            <Link className="menu">
                                 <AiIcons.AiOutlineClose />
                             </Link>
                         </li>

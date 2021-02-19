@@ -1,13 +1,13 @@
 .Nav {
     background-color: #A63D10;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: start;
     align-items: center;
 
 }
 .menu{
-    background-color: #A63D10;
+    margin-left: 2rem;
     font-size: 2rem;
     background: none;
 }
@@ -18,7 +18,7 @@
     display: flex;
     justify-content: center;
     position: fix;
-    left: -100%;
+    /* left: -100%; */
     transition: 950ms;
 }
 .nav-menu.active{
@@ -68,7 +68,7 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    height: 600px;
    
 }
 /* h1{
